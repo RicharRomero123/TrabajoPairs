@@ -1,1 +1,97 @@
-<p>peliculas-table works!</p>
+<p>
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Películas</span>
+      <span class="example-spacer"></span>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
+    </mat-toolbar>
+</p>
+
+<form (submit)="onSubmit()" #movieForm='ngForm'>
+ 
+  <mat-form-field><input matInput placeholder="name" name = "Name" required [(ngModel)]="movieData.name"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="photo" name = "Photo" required [(ngModel)]="movieData.photo"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="duration" name = "Duration" required [(ngModel)]="movieData.duration"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="genres" name = "Genres" required [(ngModel)]="movieData.genres"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="year" name = "Year" required [(ngModel)]="movieData.year"></mat-form-field>
+  <mat-form-field><input type="text" matInput placeholder="info" name = "Info" required [(ngModel)]="movieData.info "></mat-form-field>
+
+  <ng-container *ngIf="isEditMode; else elseTemplate">
+    <button mat-button color="primary">Update</button>&nbsp;
+    <button mat-button color="warn" (click)="cancelEdit()">Cancel</button> 
+  </ng-container>&nbsp;
+
+  <ng-template #elseTemplate>
+    <button mat-button color="primary">Add</button>
+  </ng-template>
+
+</form>
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+   
+  <!-- Id Column -->
+<ng-container matColumnDef="id">
+  <th mat-header-cell *matHeaderCellDef>ID</th>
+  <td mat-cell *matCellDef="let element">{{element.id}} </td>
+</ng-container>
+
+<ng-container matColumnDef="name">
+  <th mat-header-cell *matHeaderCellDef>Name</th>
+  <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+</ng-container>
+
+<ng-container matColumnDef="photo">
+  <th mat-header-cell *matHeaderCellDef>Photo</th>
+  <td mat-cell *matCellDef="let element">
+    <img src={{element.photo}} alt="movie_image" width="100" height="100">
+  </td>
+</ng-container>
+
+<ng-container matColumnDef="duration">
+  <th mat-header-cell *matHeaderCellDef>Duration</th>
+  <td mat-cell *matCellDef="let element">{{element.duration}} </td>
+</ng-container>
+
+<ng-container matColumnDef="genres">
+  <th mat-header-cell *matHeaderCellDef>Genres</th>
+  <td mat-cell *matCellDef="let element"> {{element.genres}} </td> 
+</ng-container>
+
+<ng-container matColumnDef="year">
+  <th mat-header-cell *matHeaderCellDef>Year</th>
+  <td mat-cell *matCellDef="let element"> {{element.year}} </td>
+</ng-container>
+
+<ng-container matColumnDef="info">
+    <th mat-header-cell *matHeaderCellDef>Info</th>
+    <td mat-cell *matCellDef="let element"> {{element.info}} </td>
+  </ng-container>
+
+<ng-container matColumnDef="actions">
+  <th mat-header-cell *matHeaderCellDef>Actions</th>
+  <td mat-cell *matCellDef="let element">
+    <a mat-raised-button color="accent"(click)="editItem(element)">
+      <mat-icon>edit</mat-icon>
+    </a>
+    <a mat-raised-button color="warn"(click)="deleteItem(element.id)">
+      <mat-icon>delete</mat-icon> 
+    </a>
+  </td>
+</ng-container>
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+<mat-paginator [pageSize]="5" [pageSizeOptions]="[5, 10, 15]" showFirstLastButtons aria-label="Select page"></mat-paginator>
+
+
+  

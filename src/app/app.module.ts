@@ -7,6 +7,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { PeliculasTableComponent } from './peliculas-table/peliculas-table.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import{MatIconModule} from '@angular/material/icon';
+import{MatTableModule} from '@angular/material/table';
+import{MatPaginatorModule} from '@angular/material/paginator';
+import{MatButtonModule} from '@angular/material/button';
+import{FormsModule} from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import{ReactiveFormsModule} from '@angular/forms';
+import{MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +28,16 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatButtonModule,
+    FormsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
