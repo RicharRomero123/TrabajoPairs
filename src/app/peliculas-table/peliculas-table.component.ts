@@ -20,7 +20,7 @@ export class PeliculasTableComponent {
 
   dataSource = new MatTableDataSource();
 
-  displayedColumns:string[]=['id','name','photo','duration','genres','year','info']
+  displayedColumns:string[]=['id','name','photo','duration','genres','year','info','actions']
 
   @ViewChild(MatPaginator, {static: true})
   paginator!:MatPaginator;
