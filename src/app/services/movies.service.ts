@@ -15,7 +15,7 @@ export class MoviesService {
   httpOptions =
   {
     headers: new  HttpHeaders({
-      'Content-type':'application/json',
+        'Content-type':'application/json',
 
      }),
   };
