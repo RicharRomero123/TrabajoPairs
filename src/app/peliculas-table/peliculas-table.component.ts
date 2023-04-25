@@ -15,6 +15,8 @@ import { Movie } from '../models/movie.model';
 })
 export class PeliculasTableComponent {
 
+  @ViewChild('movieForm',{static:false})
+
   movieForm!:NgForm;
   movieData!:Movie;
 
@@ -36,13 +38,13 @@ export class PeliculasTableComponent {
       console.log(this.movieForm.form.value);
       if(this.isEditMode)
       {
-        console.log('update');
+        console.log('update!');
         this.updateMovie();
         this.getAllMovies();
       }
       else
       {
-        console.log('create');
+        console.log('create!');
         this.addMovie();
         this.getAllMovies();
       }

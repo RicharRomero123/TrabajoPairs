@@ -1,155 +1,215 @@
 {
-    "movies":[
+  "movies": [
     {
-        "id": 1,
-        "name": "El caballero de la noche",
-        "photo": "https://static.wikia.nocookie.net/doblaje/images/9/9c/Batman_el_Caballero_de_la_Noche.png/revision/latest?cb=20110602012240&path-prefix=es.jpg",
-        "duration": 152,
-        "genres": ["Acción", "Drama", "Crimen"],
-        "year": 2008,
-        "info": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía."
+      "id": 1,
+      "name": "El caballero de la noche",
+      "photo": "https://i0.wp.com/codigoespagueti.com/wp-content/uploads/2021/06/10-curiosidades-de-Batman-El-Caballero-de-la-Noche-la-mejor-pelicula-del-Hombre-Murcielago-1.jpg?fit=1280%2C720&quality=80&ssl=1",
+      "duration": 152,
+      "genres": [
+        "Acción",
+        "Drama",
+        "Crimen"
+      ],
+      "year": 2008,
+      "info": "Batman tiene que mantener el equilibrio entre el heroísmo y el vigilantismo para pelear contra un vil criminal conocido como el Guasón, que pretende sumir Ciudad Gótica en la anarquía."
     },
     {
-        "id": 2,
-        "name": "La La Land",
-        "photo": "https://pics.filmaffinity.com/la_la_land-262021831-mmed.jpg",
-        "duration": 128,
-        "genres": ["Comedia", "Drama", "Musical"],
-        "year": 2016,
-        "info":"Sebastian, un pianista de jazz, y Mia, una aspirante a actriz, se enamoran locamente; pero la ambición desmedida que tienen por triunfar en sus respectivas carreras, pone en peligro su amor."
+      "id": 2,
+      "name": "La La Land",
+      "photo": "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_.jpg",
+      "duration": 128,
+      "genres": [
+        "Comedia",
+        "Drama",
+        "Musical"
+      ],
+      "year": "2016",
+      "info": "Sebastian, un pianista de jazz, y Mia, una aspirante a actriz, se enamoran locamente; pero la ambición desmedida que tienen por triunfar en sus respectivas carreras, pone en peligro su amor."
     },
     {
-        "id": 3,
-        "name": "Toy Story 3",
-        "photo": "https://pics.filmaffinity.com/Toy_Story_3-691147043-large.jpg",
-        "duration": 103,
-        "genres": ["Animación", "Aventura", "Comedia"],
-        "year": 2010,
-        "info":"Toy Story 3 es la tercera película de la saga de animación Toy Story. La película fue distribuida en cines en formato analógico"
+      "id": 3,
+      "name": "Toy Story 3",
+      "photo": "https://pics.filmaffinity.com/Toy_Story_3-691147043-large.jpg",
+      "duration": 103,
+      "genres": [
+        "Animación",
+        "Aventura",
+        "Comedia"
+      ],
+      "year": "2010",
+      "info": "Toy Story 3 es la tercera película de la saga de animación Toy Story. La película fue distribuida en cines en formato analógico"
     },
     {
-        "id": 4,
-        "name": "Spider-Man: Un nuevo universo",
-        "photo": "https://pics.filmaffinity.com/Spider_Man_Un_nuevo_universo-821372865-large.jpg",
-        "duration": 117,
-        "genres": ["Animación", "Acción", "Aventura"],
-        "year": 2018,
-        "info": "Miles Morales se embarca en una aventura épica que transportará al simpático Spiderman de Brooklyn a través del Multiverso para unir fuerzas con Gwen Stacy y un nuevo equipo."
+      "id": 4,
+      "name": "Spider-Man: Un nuevo universo",
+      "photo": "https://pics.filmaffinity.com/Spider_Man_Un_nuevo_universo-821372865-large.jpg",
+      "duration": 117,
+      "genres": [
+        "Animación",
+        "Acción",
+        "Aventura"
+      ],
+      "year": 2018,
+      "info": "Miles Morales se embarca en una aventura épica que transportará al simpático Spiderman de Brooklyn a través del Multiverso para unir fuerzas con Gwen Stacy y un nuevo equipo."
     },
     {
-        "id": 5,
-        "name": "Avengers: Endgame",
-        "photo": "https://static.wikia.nocookie.net/marvelcinematicuniverse/images/9/9b/Avenger_Endgame_Poster_Oficial.png/revision/latest?cb=20190326185910&path-prefix=es.jpg",
-        "duration": 181,
-        "genres": ["Acción", "Aventura", "Ciencia ficción"],
-        "year": 2019,
-        "info":"Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo"
+      "id": 5,
+      "name": "Avengers: Endgame",
+      "photo": "https://lumiere-a.akamaihd.net/v1/images/p_avengersendgame_19751_e14a0104.jpeg?region=0%2C0%2C540%2C810",
+      "duration": 181,
+      "genres": [
+        "Acción",
+        "Aventura",
+        "Ciencia ficción"
+      ],
+      "year": 2019,
+      "info": "Los Vengadores restantes deben encontrar una manera de recuperar a sus aliados para un enfrentamiento épico con Thanos, el malvado que diezmó el planeta y el universo"
     },
     {
-        "id": 6,
-        "name": "The Lord of the Rings: The Fellowship of the Ring",
-        "photo": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
-        "duration": 178,
-        "genres": ["Action", "Adventure", "Drama"],
-        "year": 2001,
-        "info": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed."
+      "id": 6,
+      "name": "The Lord of the Rings: The Fellowship of the Ring",
+      "photo": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+      "duration": 178,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "year": 2001,
+      "info": "A young hobbit, Frodo, who has found the One Ring that belongs to the Dark Lord Sauron, begins his journey with eight companions to Mount Doom, the only place where it can be destroyed."
     },
     {
-        "id": 7,
-        "name": "The Social Network",
-        "photo": "https://pics.filmaffinity.com/La_red_social-460155430-large.jpg",
-        "duration": 120,
-        "genres": ["Biography", "Drama"],
-        "year": 2010,
-        "info": "Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business."
-    } , 
-    {
-        "id": 8,
-        "name": "The Shawshank Redemption",
-        "photo": "https://pics.filmaffinity.com/Cadena_perpetua-576140557-large.jpg",
-        "duration": 142,
-        "genres": ["Drama"],
-        "year": 1994,
-        "info": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
-    },
-    
-    {
-        "id": 9,
-        "name": "The Godfather",
-        "photo": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
-        "duration": 175,
-        "genres": ["Crime", "Drama"],
-        "year": 1972,
-        "info": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
-    },
-      
-    {
-        "id": 10,
-        "name": "Inception",
-        "photo": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
-        "duration": 148,
-        "genres": ["Action", "Adventure", "Sci-Fi"],
-        "year": 2010,
-        "info": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."
-    },
-    
-    {
-        "id": 11,
-        "name": "The Matrix",
-        "photo": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
-        "duration": 136,
-        "genres": ["Action", "Sci-Fi"],
-        "year": 1999,
-        "info": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
-    },
-    
-    {
-        "id": 12,
-        "name": "The Silence of the Lambs",
-        "photo": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
-        "duration": 118,
-        "genres": ["Crime", "Drama", "Thriller"],
-        "year": 1991,
-        "info": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims."
-    },
-    
-    {
-        "id": 13,
-        "name": "Interstellar",
-        "photo": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
-        "duration": 169,
-        "genres": ["Adventure", "Drama", "Sci-Fi"],
-        "year": 2014,
-        "info": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
-    },
-    
-    {
-        "id": 14,
-        "name": "The Lion King",
-        "photo": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
-        "duration": 88,
-        "genres": ["Animation", "Adventure", "Drama"],
-        "year": 1994,
-        "info": "Lion prince"
+      "id": 7,
+      "name": "The Social Network",
+      "photo": "https://i.pinimg.com/originals/7e/37/b9/7e37b994b613e94cba64f307b1983e39.jpg  ",
+      "duration": 120,
+      "genres": [
+        "Biography",
+        "Drama"
+      ],
+      "year": 2010,
+      "info": "Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea, and the co-founder who was later squeezed out of the business."
     },
     {
-        "id": 15,
-        "name": "The Revenant",
-        "photo": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
-        "duration": 156,
-        "genres": ["Action", "Adventure", "Drama"],
-        "year": 2015,
-        "info": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team."
+      "id": 8,
+      "name": "The Shawshank Redemption",
+      "photo": "https://i.ytimg.com/vi/19THOH_dvxg/movieposter_en.jpg",
+      "duration": 142,
+      "genres": [
+        "Drama"
+      ],
+      "year": 1994,
+      "info": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."
     },
     {
-        "id": 16,
-        "name": "Pulp Fiction",
-        "photo": "https://pics.filmaffinity.com/Pulp_Fiction-210382116-mmed.jpg",
-        "duration": 154,
-        "genres": ["Crime", "Drama"],
-        "year": 1994,
-        "info": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+      "id": 9,
+      "name": "The Godfather",
+      "photo": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg",
+      "duration": 175,
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "year": 1972,
+      "info": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son."
+    },
+    {
+      "id": 10,
+      "name": "Inception",
+      "photo": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+      "duration": 148,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Sci-Fi"
+      ],
+      "year": 2010,
+      "info": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO."
+    },
+    {
+      "id": 11,
+      "name": "The Matrix",
+      "photo": "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "duration": 136,
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "year": 1999,
+      "info": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers."
+    },
+    {
+      "id": 12,
+      "name": "The Silence of the Lambs",
+      "photo": "https://m.media-amazon.com/images/M/MV5BNjNhZTk0ZmEtNjJhMi00YzFlLWE1MmEtYzM1M2ZmMGMwMTU4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg",
+      "duration": 118,
+      "genres": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "year": 1991,
+      "info": "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims."
+    },
+    {
+      "id": 13,
+      "name": "Interstellar",
+      "photo": "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg",
+      "duration": 169,
+      "genres": [
+        "Adventure",
+        "Drama",
+        "Sci-Fi"
+      ],
+      "year": 2014,
+      "info": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival."
+    },
+    {
+      "id": 14,
+      "name": "The Lion King",
+      "photo": "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg",
+      "duration": 88,
+      "genres": [
+        "Animation",
+        "Adventure",
+        "Drama"
+      ],
+      "year": 1994,
+      "info": "Lion prince"
+    },
+    {
+      "id": 15,
+      "name": "The Revenant",
+      "photo": "https://m.media-amazon.com/images/M/MV5BMDE5OWMzM2QtOTU2ZS00NzAyLWI2MDEtOTRlYjIxZGM0OWRjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_.jpg",
+      "duration": 156,
+      "genres": [
+        "Action",
+        "Adventure",
+        "Drama"
+      ],
+      "year": 2015,
+      "info": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team."
+    },
+    {
+      "id": 16,
+      "name": "Pulp Fiction",
+      "photo": "https://pics.filmaffinity.com/Pulp_Fiction-210382116-mmed.jpg",
+      "duration": 154,
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "year": 1994,
+      "info": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption."
+    },
+    {
+      "id": 17,
+      "name": "Conjuro",
+      "photo": "https://static.cinepolis.com/resources/mx/movies/posters/414x603/41998-282781-20230317121349.jpg",
+      "duration": "120",
+      "genres": "Terror",
+      "year": "2016",
+      "info": "Pelicula de una niña poseida que trata de ser exorcisada"
     }
-
-    ]
+  ]
 }
