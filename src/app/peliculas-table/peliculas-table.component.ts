@@ -4,7 +4,7 @@ import {MatPaginator} from '@angular/material/paginator'
 import {MatSort} from '@angular/material/sort'
 import { NgForm } from '@angular/forms';
 import {MoviesService} from '../services/movies.service'
-
+import {MatGridListModule} from "@angular/material/grid-list";
 import * as _ from 'lodash';
 import { Movie } from '../models/movie.model';
 
@@ -72,7 +72,7 @@ export class PeliculasTableComponent {
     this.moviesService.getList().subscribe((response:any)=>{
       this.dataSource.data = response})
   }
-  
+
   editItem(element: any)
   {
     this.movieData = _.cloneDeep(element);
