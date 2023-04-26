@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Ejecucion
+
+Para iniciar correctamente el proyecto angular, se debe dirigir a la carpeta /src/assets para ejecutar el siguiente comando. json-server --watch data.json ya que en este proyecto no se utilizó un API para recolectar la información. Despues de ello en la ejecución se podrán apreciar todos los datos de las peliculas que se encuentran en el archivo data.json
