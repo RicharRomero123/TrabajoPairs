@@ -29,8 +29,11 @@
   </ng-container>&nbsp;
 
   <ng-template #elseTemplate>
-    <button mat-button color="primary">Add</button>
+    <button mat-button color="primary">Add </button>
+    
   </ng-template>
+  <button (click)="get_total_movies()">Total de peliculas: {{cantidad_peliculas}}</button> 
+
 
 </form>
 

@@ -20,8 +20,9 @@ export class PeliculasTableComponent {
   movieForm!:NgForm;
   movieData!:Movie;
 
-  dataSource = new MatTableDataSource();
 
+  dataSource = new MatTableDataSource();
+  cantidad_peliculas:any
   displayedColumns:string[]=['id','name','photo','duration','genres','year','info','actions']
 
   @ViewChild(MatPaginator, {static: true})
@@ -41,14 +42,17 @@ export class PeliculasTableComponent {
         console.log('update!');
         this.updateMovie();
         this.getAllMovies();
+        this.get_total_movies();
       }
       else
       {
         console.log('create!');
         this.addMovie();
         this.getAllMovies();
+        this.get_total_movies();
       }
       this.cancelEdit();
+      
     }
     else
     {
@@ -65,12 +69,15 @@ export class PeliculasTableComponent {
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
     this.getAllMovies();
+    
   }
 
   getAllMovies()
   {
     this.moviesService.getList().subscribe((response:any)=>{
-      this.dataSource.data = response})
+      this.dataSource.data = response
+      this.cantidad_peliculas = this.dataSource.data.length
+    })
   }
 
   editItem(element: any)
@@ -90,9 +97,10 @@ export class PeliculasTableComponent {
       this.dataSource.data = this.dataSource.data.filter((o:any)=>{
         return o.id !== id ? o: false;
       });
+      this.cantidad_peliculas = this.dataSource.data.length;
     });
     console.log(this.dataSource.data)
-
+    
   }
 
   addMovie()
@@ -114,7 +122,14 @@ export class PeliculasTableComponent {
         return 0;
       });
     });
+    this.cantidad_peliculas = this.dataSource.data.length;
   }
+
+  get_total_movies()
+  {
+    this.cantidad_peliculas = this.dataSource.data.length;
+  }
+
 
 
 }
