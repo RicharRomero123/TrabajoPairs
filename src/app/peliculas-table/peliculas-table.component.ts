@@ -19,7 +19,7 @@ export class PeliculasTableComponent {
 
   movieForm!:NgForm;
   movieData!:Movie;
-
+  showForm: boolean = false;
 
   dataSource = new MatTableDataSource();
   cantidad_peliculas:any

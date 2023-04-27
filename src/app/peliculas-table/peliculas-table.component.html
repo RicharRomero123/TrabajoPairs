@@ -14,28 +14,29 @@
     </mat-toolbar>
 </p>
 
-<form (submit)="onSubmit()" #movieForm='ngForm'>
+<button mat-button color="warn" (click)="showForm = !showForm"> Add Movies </button>
 
-  <mat-form-field><input matInput placeholder="name" name = "Name" required [(ngModel)]="movieData.name"></mat-form-field>
-  <mat-form-field><input type="text" matInput placeholder="photo" name = "Photo" required [(ngModel)]="movieData.photo"></mat-form-field>
-  <mat-form-field><input type="text" matInput placeholder="duration" name = "Duration" required [(ngModel)]="movieData.duration"></mat-form-field>
-  <mat-form-field><input type="text" matInput placeholder="genres" name = "Genres" required [(ngModel)]="movieData.genres"></mat-form-field>
-  <mat-form-field><input type="text" matInput placeholder="year" name = "Year" required [(ngModel)]="movieData.year"></mat-form-field>
-  <mat-form-field><input type="text" matInput placeholder="info" name = "Info" required [(ngModel)]="movieData.info "></mat-form-field>
+<div *ngIf="showForm">
+  <form (submit)="onSubmit()" #movieForm='ngForm'>
 
-  <ng-container *ngIf="isEditMode; else elseTemplate">
-    <button mat-button color="primary" >Update</button>&nbsp;
-    <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
-  </ng-container>&nbsp;
+    <mat-form-field><input matInput placeholder="name" name = "Name" required [(ngModel)]="movieData.name"></mat-form-field>
+    <mat-form-field><input type="text" matInput placeholder="photo" name = "Photo" required [(ngModel)]="movieData.photo"></mat-form-field>
+    <mat-form-field><input type="text" matInput placeholder="duration" name = "Duration" required [(ngModel)]="movieData.duration"></mat-form-field>
+    <mat-form-field><input type="text" matInput placeholder="genres" name = "Genres" required [(ngModel)]="movieData.genres"></mat-form-field>
+    <mat-form-field><input type="text" matInput placeholder="year" name = "Year" required [(ngModel)]="movieData.year"></mat-form-field>
+    <mat-form-field><input type="text" matInput placeholder="info" name = "Info" required [(ngModel)]="movieData.info "></mat-form-field>
 
-  <ng-template #elseTemplate>
-    <button mat-button color="primary">Add </button>
-    
-  </ng-template>
-  <button (click)="get_total_movies()">Total de peliculas: {{cantidad_peliculas}}</button> 
+    <ng-container *ngIf="isEditMode; else elseTemplate">
+      <button mat-button color="primary" >Update</button>&nbsp;
+      <button mat-button color="warn" (click)="cancelEdit()">Cancel</button>
+    </ng-container>&nbsp;
 
-
-</form>
+    <ng-template #elseTemplate>
+      <button mat-button color="primary">Add</button>
+    </ng-template>
+    <button (click)="get_total_movies()">Total de peliculas: {{cantidad_peliculas}}</button> 
+  </form>
+</div>
 
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
